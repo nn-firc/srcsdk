@@ -16,7 +16,7 @@ jobs:
     - uses: actions/checkout@v2
     - name: Build android-armv7a
       run: |
-        scripts/build-android-armv7a.sh
+        bash scripts/build-android-armv7a.sh
         ls -la
         find ./build -type f -name "*.o" -delete
         find ./build -type d -empty -delete
