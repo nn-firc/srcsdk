@@ -20,7 +20,7 @@ jobs:
         ls -la
         find ./build -type f -name "*.o" -delete
         find ./build -type d -empty -delete
-        rm -rf android*.zip
+        rm -f android*.zip
         zip -r build-android-armv7a.zip build
     - uses: actions/upload-artifact@v2
       with:
